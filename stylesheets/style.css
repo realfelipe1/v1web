@@ -13,7 +13,7 @@
 
 body {
   font-family: 'Raleway';
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
   min-height: 2000px;
 }
 
@@ -87,27 +87,23 @@ transition: width .3s;
 }
 
 
-/* Full viewport height header with image carousel */
 .header {
   position: relative;
   height: 100vh;
   overflow: hidden;
 }
 
-
-/* Carousel wrapper to hold and slide the images */
 .carousel-wrapper {
   display: flex;
-  width: 400%; /* 100% width per image (4 images -> 400%) */
+  width: 400%;
   height: 100%;
   transition: transform 1s ease-in-out;
 }
 
-/* Individual carousel images using img */
 .carousel-wrapper img {
-  width: 100%; /* Each image takes up 100% of the viewport width */
+  width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image fills the container while maintaining aspect ratio */
+  object-fit: cover;
 }
 
 .overlay {
@@ -116,11 +112,10 @@ transition: width .3s;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity */
-  z-index: 1; /* This makes sure the overlay is above the images but below the text */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
-/* Title inside the header */
 .title {
   position: absolute;
   top: 50%;
@@ -136,7 +131,6 @@ transition: width .3s;
   margin-bottom: 20px;
 }
 
-/* Links inside the header */
 .link li {
   list-style: none;
   display: inline-block;
@@ -178,7 +172,6 @@ transition: width .3s;
   color: #fff;
 }
 
-/* Button list */
 .button-list {
   display: flex;
   justify-content: center;
@@ -194,27 +187,26 @@ transition: width .3s;
 .sectionfast li a {
   text-decoration: none;
   padding: 10px 35px;
-  background-color: #333; /* Darker button background */
+  background-color: #333;
   color: #fff;
-  border-radius: 30px; /* Rounded buttons */
+  border-radius: 30px;
   font-size: 1.3rem;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add button shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Hover effect for buttons */
 .sectionfast li a:hover {
   background-color: #fff;
-  color: #FF4B2B; /* Button text matches the gradient */
-  transform: scale(1.05); /* Slightly enlarge on hover */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Add hover shadow */
+  color: #4797ff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .services {
   width: 100%;
   padding: 40px 20px;
   background-color: #f5f5f5;
-  text-align: center; /* Center aligns the heading */
+  text-align: center;
 }
 
 .services h1 {
@@ -271,6 +263,112 @@ transition: width .3s;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
+
+.faq-section {
+  display: flex;
+  justify-content: space-between; /* Ensures space is distributed */
+  padding: 3rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq-container {
+  width: 50%; /* Keep FAQ section width fixed */
+}
+
+.faq-container h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 2rem;
+}
+
+.accordion {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-button {
+  background-color: #f7f7f7;
+  border: none;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  color: #333;
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+
+.accordion-button:hover {
+  background-color: #e0e0e0;
+}
+
+.accordion-button.active {
+  background-color: #0071e3;
+  color: #fff;
+}
+
+.accordion-button::after {
+  content: '+';
+  position: absolute;
+  right: 1.5rem;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+  color: inherit;
+}
+
+.accordion-button.active::after {
+  content: '-';
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 0 1.5rem;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.accordion-content.active {
+  max-height: 150px;
+  padding: 1rem 1.5rem;
+}
+
+.faq-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.image-container {
+  width: 45%; /* Fixed width for image container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  user-select: none;
+}
 
 
 
