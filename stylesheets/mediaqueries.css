@@ -110,3 +110,26 @@
   }
 
   
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-right, .footer-left, .footer-center {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  
+    .footer-right, .footer-left {
+      max-width: none;
+    }
+  
+    .footer-bottom-links {
+      flex-direction: column;
+    }
+  
+    .footer-bottom-links li {
+      margin-bottom: 0.5rem;
+    }
+  }
