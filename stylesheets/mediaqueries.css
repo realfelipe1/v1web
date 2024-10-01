@@ -11,7 +11,7 @@
     width: 100vw;
     align-items: center;
     justify-content: center;
-    background: rgb(42, 42, 43);
+    background: #152640;
     color: rgb(255, 255, 255);
     height: 124vh;
     top: 6%;
@@ -151,6 +151,13 @@
 }
 
 @media (max-width: 768px) {
+  
+  .responsive{
+    display: block;
+  }
+  footer.footer{
+    display: none;
+  }
   .services-item {
     width: 100%;
   }
@@ -162,9 +169,83 @@
   .link li a {
     padding: 8px 20px;
   }
+
+  /* Contact Info Section */
+.contact-info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: white;
+}
+
+.contact-details {
+  margin-bottom: 20px;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Footer CTA Section */
+.footer-cta-section {
+  background-color: #041737;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footer-cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.cta-button {
+  background-color: #1e90ff;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #1c76d2;
+}
+
+/* Footer */
+.footerMobile {
+  text-align: center;
+  padding: 20px;
+  background-color: #041737;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.footerMobile a {
+  color: #1e90ff;
+}
+
 }
 
 @media (max-width: 480px) {
+  
+  .responsive{
+    display: block;
+  }
+  footer.footer{
+    display: none;
+  }
   .title h1 {
     font-size: 1.5rem;
   }
@@ -179,5 +260,95 @@
 
   .services h1 {
     font-size: 2rem;
+  }
+
+
+  /* Footer CTA Section */
+.footer-cta-section {
+  background-color: #041737;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footer-cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.cta-button {
+  background-color: #1e90ff;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #1c76d2;
+}
+
+/* Footer */
+.footerMobile {
+  text-align: center;
+  padding: 20px;
+  background-color: #041737;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.footerMobile a {
+  color: #1e90ff;
+}
+}
+
+
+/* Responsive styles for mobile */
+@media screen and (max-width: 768px) {
+  .faq-section {
+    flex-direction: column;
+    padding: 1.5rem 2%;
+  }
+
+  .faq-container {
+    width: 100%;
+  }
+
+  .faq-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .accordion-button {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+
+  .accordion-content {
+    padding: 0 1rem;
+  }
+
+  .accordion-content.active {
+    padding: 1rem;
+  }
+
+  .faq-container p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  nav {
+    justify-content: space-between; /* Distribute space differently on mobile */
+  }
+
+  .logo {
+    font-size: 14px; /* Decrease font size */
+    padding: 5px 10px; /* Reduce padding to shrink the clickable area */
+    margin-left: 5px; /* Reduce potential spacing around the logo */
+  }
+
+  .nav-links {
+    width: auto; /* Let the navigation links adjust automatically to screen size */
   }
 }

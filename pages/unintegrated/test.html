@@ -24,9 +24,9 @@
     <meta property="twitter:description" content="24-hour service for maintenance and repairing needs. Trusted professionalism delivering customer satisfaction.">
     <meta property="twitter:image" content="web/img/2024/Metalogo.png">
     <!-- CSS -->
-    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/unintegrated/test.css">
     <link rel="stylesheet" href="stylesheets/mediaqueries.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="(min-width: 550px)" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -35,7 +35,7 @@
   <body>
     <noscript>Sorry, your browser does not support JavaScript!</noscript>
     <nav data-aos="fade-down" data-aos-duration="600" data-aos-delay="700">
-      <a href="https://cpmservices.co">
+      <a href="/index">
         <h2 class="logo" data-aos="fade-right" data-aos-duration="500" data-aos-delay="850">Central Petroleum Maintenance</h2>
       </a>
       <ul class="nav-links">
@@ -50,8 +50,8 @@
         </li>
         <!-- <li data-aos="zoom-in" data-aos-duration="900" data-aos-delay="850"><a class="nav-link" href="about.html">ABOUT</a></li> -->
         <li data-aos="zoom-out" data-aos-duration="900" data-aos-delay="850">
-          <a class="nav-link" href="pages/contact">CONTACT</a>
-        </li>
+            <a class="nav-link" href="/contact">CONTACT</a>
+          </li>
       </ul>
       <div class="burger">
         <div class="line one"></div>
@@ -73,10 +73,10 @@
         </h1>
         <div class="link">
           <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000">
-            <a href="#services">Learn More</a>
+            <a href="#">Learn More</a>
           </li>
           <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="1200">
-            <a href="pages/contact">Contact Us</a>
+            <a href="#">Contact Us</a>
           </li>
         </div>
       </div>
@@ -85,59 +85,51 @@
     <a name="services"></a>
     <div class="services">
       <h1 data-aos="zoom-in">Our Services</h1>
-      <div data-aos="zoom-in" data-aos-duration="800" class="services-content">
+      <div class="services-content">
         <div class="services-item">
           <i class="fas fa-gas-pump"></i>
           <h2>Fueling Systems</h2>
           <p>We install and maintain high-quality fueling systems.</p>
         </div>
-        
-        <div data-aos="zoom-in" data-aos-duration="800" class="services-item">
+        <div class="services-item">
           <i class="fas fa-store"></i>
           <h2>Convenience Store Systems</h2>
-          <p>Comprehensive services for store POS systems, including installation and maintenance.</p>
+          <p>Comprehensive services for store systems.</p>
         </div>
-        
-        <div data-aos="zoom-in" data-aos-duration="800" class="services-item">
+        <div class="services-item">
           <i class="fas fa-car"></i>
-          <h2>Car Wash POS Programming</h2>
-          <p>Efficient programming and setup of car wash point-of-sale systems.</p>
+          <h2>Car Wash Electrical Systems</h2>
+          <p>Efficient car wash electrical installations.</p>
         </div>
-        
-        <div data-aos="zoom-in" data-aos-duration="800" class="services-item">
-          <i class="fas fa-tools"></i>
-          <h2>Compliance Testing & UST Repairs</h2>
-          <p>Compliance testing and underground storage tank (UST) repairs to ensure safety standards.</p>
+        <div class="services-item">
+          <i class="fas fa-coffee"></i>
+          <h2>Beverage Equipment</h2>
+          <p>Installation and maintenance of beverage equipment.</p>
         </div>
-        
-        <div data-aos="zoom-in" data-aos-duration="800" class="services-item">
-          <i class="fas fa-video"></i>
-          <h2>Camera Security Systems Installations & POS Integration</h2>
-          <p>Professional installation of security camera systems integrated with POS for full coverage.</p>
-        </div>
-        
-        <div data-aos="zoom-in" data-aos-duration="800" class="services-item">
-          <i class="fas fa-utensils"></i>
-          <h2>Express Lane Food Service Programming</h2>
-          <p>Reliable programming solutions for fast food service and express lane systems.</p>
-        </div>
-        
-        <div data-aos="zoom-in" data-aos-duration="800" class="services-item">
+        <div class="services-item">
           <i class="fas fa-bolt"></i>
-          <h2>Upgrades</h2>
-          <p>Upgrade your systems for improved performance, security, and efficiency.</p>
+          <h2>Electrical Service & Contracting</h2>
+          <p>Professional electrical services and contracting.</p>
         </div>
-        
-        <div data-aos="zoom-in" data-aos-duration="800" class="services-item">
+        <div class="services-item">
+          <i class="fas fa-utensils"></i>
+          <h2>Food Service Equipment</h2>
+          <p>Reliable food service equipment solutions.</p>
+        </div>
+        <div class="services-item">
+          <i class="fas fa-tools"></i>
+          <h2>Upgrades</h2>
+          <p>Upgrade your systems for efficiency.</p>
+        </div>
+        <div class="services-item">
           <i class="fas fa-exclamation-triangle"></i>
           <h2>Emergencies</h2>
-          <p>24/7 emergency repair and maintenance services.</p>
+          <p>24/7 emergency services.</p>
         </div>
-        
-        <div data-aos="zoom-in" data-aos-duration="800" class="services-item">
+        <div class="services-item">
           <i class="fas fa-wrench"></i>
           <h2>Maintenance</h2>
-          <p>Comprehensive maintenance services to keep your systems running smoothly.</p>
+          <p>Comprehensive maintenance services.</p>
         </div>
       </div>
     </div>
@@ -160,64 +152,63 @@
       <div class="faq-container">
         <h1>FREQUENTLY ASKED QUESTIONS</h1>
         <div class="accordion">
-          <div data-aos="fade-down" data-aos-duration="800" class="accordion-item">
-            <button class="accordion-button">How can I verify my compliance status?</button>
+          <div class="accordion-item">
+            <button class="accordion-button">How do I know whether or not I'm in compliance?</button>
             <div class="accordion-content">
-              <p>We provide compliance audits to help you confirm that your operations align with industry regulations.</p>
+              <p>We offer compliance checks to ensure you are meeting all industry standards.</p>
             </div>
           </div>
-          <div data-aos="fade-up" data-aos-duration="800" class="accordion-item">
-            <button class="accordion-button">Is it necessary to update my system?</button>
+          <div class="accordion-item">
+            <button class="accordion-button">Should I upgrade my system?</button>
             <div class="accordion-content">
-              <p>Keeping your system up to date guarantees access to the latest features, security updates, and performance improvements.</p>
+              <p>Upgrading your system ensures you have the latest features and security patches.</p>
             </div>
           </div>
-          <div data-aos="fade-down" data-aos-duration="800" class="accordion-item">
-            <button class="accordion-button">Do you offer certification for monitoring systems?</button>
+          <div class="accordion-item">
+            <button class="accordion-button">Can you certify my monitoring system?</button>
             <div class="accordion-content">
-              <p>Yes, we offer certification services to validate that your monitoring systems comply with industry standards.</p>
+              <p>Yes, we provide certification services for your monitoring systems to ensure they meet compliance.</p>
             </div>
           </div>
-          <div data-aos="fade-up" data-aos-duration="800" class="accordion-item">
-            <button class="accordion-button">What are your service and office hours?</button>
+          <div class="accordion-item">
+            <button class="accordion-button">What are your hours of operation?</button>
             <div class="accordion-content">
-              <p>Our technical support is available 24/7, while our business office is open from 8:00 AM to 5:00 PM, Monday through Friday.</p>
+              <p>Our service technicians are available 24 hours a day to handle your service needs. Our business office is open from 8am to 4:30pm, Monday through Friday.</p>
             </div>
           </div>
-          
         </div>
       </div>
-      <div data-aos="zoom-out" data-aos-duration="800" class="image-container">
+      <div class="image-container">
         <img src="img/2024/gasPump.jpg" alt="Gas Pump">
       </div>
     </div>
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-left">
-          <img data-aos="zoom-out" data-aos-duration="800" src="img/2024/raw/CPM-bg.png" alt="Central Petroleum Maintenance Logo" class="footer-logo">
-          <p data-aos="fade-right" data-aos-duration="800">176 Wyoming St <br>Pleasanton, CA 94566 </p>
+          <img src="img/2024/raw/CPM-bg.png" alt="Central Petroleum Maintenance Logo" class="footer-logo">
+          <p>176 Wyoming St <br>Pleasanton, CA 94566 </p>
         </div>
         <div class="footer-center">
           <ul>
-            <li data-aos="zoom-in" data-aos-duration="800">
+            <li>
               <a href="#services">Services</a>
             </li>
-            <li data-aos="zoom-in" data-aos-duration="800">
+            <li>
               <a href="#products">FAQ</a>
             </li>
-            <!-- <li>
+            <li>
               <a href="#about">About Us</a>
-            </li> -->
-            <li data-aos="zoom-in" data-aos-duration="800">
-              <a href="pages/contact">Contact</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
         <div class="footer-right">
-          <h3 data-aos="zoom-in" data-aos-duration="800">Get in Touch</h3>
-          <p data-aos="zoom-in" data-aos-duration="800">925 462 4060</p>
-          <a data-aos="zoom-in" data-aos-duration="800" href="mailto:info@centralpetroleum.us" class="contact-link">Message Us</a>
-          <a data-aos="fade-right" href="tel:9254624060">
+          <h3>Get in Touch</h3>
+          <p>925 462 4060</p>
+          <a href="mailto:info@centralpetroleum.us" class="contact-link">Message Us</a>
+          <a href="tel:9254624060">
             <button class="service-call-btn">Request a Service Call</button>
           </a>
         </div>
@@ -226,35 +217,22 @@
         <p>&copy; 2024 Central Petroleum Maintenance. All rights reserved.</p>
         <ul class="footer-bottom-links">
           <li>
-            <a href="pages/terms">Terms & Conditions</a>
+            <a href="#terms">Terms & Conditions</a>
           </li>
           <li>
-            <a href="pages/privacy">Privacy Policy</a>
+            <a href="#service-terms">Service Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="#privacy">Privacy Policy</a>
           </li>
         </ul>
       </div>
     </footer>
-
-     <div class="responsive">
-      <section class="footer-cta-section">
-        <h2>Need Immediate Assistance?</h2>
-        <a href="tel:+19254624060" class="cta-button">Call Us Now</a>
-      </section>
-      
-      <footer class="footerMobile">
-        <p>© 2024 Central Petroleum Maintenance. All rights reserved. | 
-        <a href="pages/terms">Terms & Conditions</a> | 
-        <a href="pages/privacy">Privacy Policy</a></p>
-      </footer>
-     </div>
-
     <script src="js/burger.js"></script>
     <script src="js/caro.js"></script>
-    <script src="js/disable.js"></script>
     <script src="js/faq.js"></script>
     <script>
       AOS.init();
     </script>
-
   </body>
 </html>
