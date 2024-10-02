@@ -99,4 +99,39 @@
     text-decoration: underline;
 }
 
+.footer-cta-section {
+    background-color: #041737;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
 
+.footer-cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.cta-button {
+    background-color: #1e90ff;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #1c76d2;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #041737;
+    color: white;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #1e90ff;
+}
